@@ -3,4 +3,5 @@
 *.weights
 *.svd
 *.names
+*.jpg
 __pycache__/*

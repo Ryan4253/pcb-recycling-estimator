@@ -1,3 +1,7 @@
+# Pyserial Constants
+ARDUINO_PORT = 'COM4'
+ARDUINO_BAUD_RATE = 115200
+
 # Camera Setup
 CAMERA_ID = 0
 CAMERA_PIXEL_WIDTH = 1920

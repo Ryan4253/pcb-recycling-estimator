@@ -1,6 +1,7 @@
 import serial
+import Constants
 
-ser = serial.Serial('COM4', 115200)
+ser = serial.Serial(Constants.ARDUINO_PORT, Constants.ARDUINO_BAUD_RATE)
 
 def setPower(power : int):
     ser.write((str(power) + '\n').encode())

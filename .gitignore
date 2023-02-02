@@ -1,7 +1,17 @@
-*.json
+# Weights
 *.cfg
 *.weights
-*.svd
 *.names
+
+# Arduino
+*.svd
+
+# Image
 *.jpg
+*.png
+
+# Python
 __pycache__/*
+
+# VSCode workspace
+*.json

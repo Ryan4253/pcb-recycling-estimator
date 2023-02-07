@@ -19,8 +19,13 @@ except KeyboardInterrupt:
     MotorController.ser.close()
 
 Camera.initialize()
-images = ImageManipulator.splitImage(cv2.imread('img.jpg'), 2, 2)
+images = ImageManipulator.splitImage(Camera.takePicture(), 1, 2)
+#images = ImageManipulator.splitImage(cv2.imread('images.jpg'), 3, 3)
+
+price = 0
 for image in images:
     result = Detector.detectComponents(image, True)
     print(result)
-    print(PriceCalculator.calculatePrice(result))
+    price += PriceCalculator.calculatePrice(result)
+
+print("Price: ", price)

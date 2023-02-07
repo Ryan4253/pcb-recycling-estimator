@@ -2,7 +2,7 @@ import Color
 import cv2
 
 # Pyserial Constants
-ARDUINO_PORT = 'COM4'
+ARDUINO_PORT = 'COM3'
 ARDUINO_BAUD_RATE = 115200
 
 # Camera Setup
